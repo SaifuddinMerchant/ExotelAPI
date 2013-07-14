@@ -47,7 +47,7 @@ public class SendSMS {
 			exotelJavaApiTemplate.callAPI(userName, token, url, param);
 		} catch (Exception e) {
 			//Ignore exception, but log it
-			sLogger.error("Exception: {}", e);	//Logs e.toString(0 which is what we want to log
+			sLogger.error("Exception: {}", e);	//Logs e.toString() which is what we want to log
 		}
 
 	}
